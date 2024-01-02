@@ -1,5 +1,5 @@
-# dextool-api
-       #// Get Request
+## dextool API
+# Get Request
 export const apiCallGet = (
     baseUrl: any,
     url: any,
@@ -19,7 +19,7 @@ export const apiCallGet = (
             });
     });
     
-        #[GET] / v2 / blockchain
+# [GET] / v2 / blockchain
 const baseurl = "https://open-api.dextools.io/free";
 const urlPath = "/v2/blockchain";
 const options = {
@@ -35,7 +35,7 @@ const dextoolInfo: any = await apiCallGet(baseurl, urlPath, data, options);
 console.log("wowwwwwwwww===>", dextoolInfo);
 console.log("wowwwwwwwww===>wwwww", dextoolInfo?.data?.results);
         
-        #[GET] / v2 / blockchain / { chain }
+# [GET] / v2 / blockchain / { chain }
 const baseurl = "https://open-api.dextools.io/free";
 const urlPath = "/v2/blockchain/bsc";   // ether
 const options = {
@@ -48,7 +48,7 @@ const dextoolInfo: any = await apiCallGet(baseurl, urlPath, {}, options);
 console.log("wowwwwwwwww===>", dextoolInfo);
 console.log("wowwwwwwwww===>wwwww", dextoolInfo?.data?.results);
         
-      #[GET] / v2 / dex / { chain }
+# [GET] / v2 / dex / { chain }
 const baseurl = "https://open-api.dextools.io/free";
 const urlPath = "/v2/blockchain/bsc";    //ether
 const options = {
@@ -64,8 +64,7 @@ const dextoolInfo: any = await apiCallGet(baseurl, urlPath, data, options);
 console.log("wowwwwwwwww===>", dextoolInfo);
 console.log("wowwwwwwwww===>wwwww", dextoolInfo?.data?.results);
         
-
-	#[GET] / v2 / pool / { chain }
+# [GET] / v2 / pool / { chain }
 const baseurl = "https://open-api.dextools.io/free";
 const urlPath = "/v2/pool/bsc";  //
 const options = {
