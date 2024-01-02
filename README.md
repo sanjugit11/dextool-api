@@ -7,9 +7,6 @@ export const apiCallGet = (
     headers?: any
 ): Promise<{ [key: string]: any }> =>
     new Promise((resolve, reject) => {
-        //   const config = {
-        //     headers
-        //   }
         console.log("formatUrl(url, params)", formatUrl(url, params));
         axios.defaults.baseURL = baseUrl;
         axios
